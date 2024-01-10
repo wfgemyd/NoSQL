@@ -1,0 +1,1084 @@
+db.department.insertMany([
+  {
+    "department_id": 1,
+    "department_name": "Cardiology",
+    "phone_num_extension": "1001"
+  },
+  {
+    "department_id": 2,
+    "department_name": "Neurology",
+    "phone_num_extension": "1002"
+  },
+  {
+    "department_id": 3,
+    "department_name": "Oncology",
+    "phone_num_extension": "1003"
+  },
+  {
+    "department_id": 4,
+    "department_name": "Pediatrics",
+    "phone_num_extension": "1004"
+  },
+  {
+    "department_id": 5,
+    "department_name": "General Medicine",
+    "phone_num_extension": "1234"
+  },
+  {
+    "department_id": 6,
+    "department_name": "Orthopedics",
+    "phone_num_extension": "1005"
+  },
+  {
+    "department_id": 7,
+    "department_name": "Oncology",
+    "phone_num_extension": "4001"
+  }
+]);
+
+db.doctor.insertMany([
+  {
+    "doctor_id": 1,
+    "department_id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "specialization": "Cardiologist",
+    "phone_num": "555-0101",
+    "address": "123 Elm Street"
+  },
+  {
+    "doctor_id": 2,
+    "department_id": 2,
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "specialization": "Neurologist",
+    "phone_num": "555-0102",
+    "address": "456 Oak Avenue"
+  },
+  {
+    "doctor_id": 3,
+    "department_id": 3,
+    "first_name": "Emily",
+    "last_name": "Jones",
+    "specialization": "Oncologist",
+    "phone_num": "555-0103",
+    "address": "789 Pine Boulevard"
+  },
+  {
+    "doctor_id": 4,
+    "department_id": 4,
+    "first_name": "William",
+    "last_name": "Brown",
+    "specialization": "Pediatrician",
+    "phone_num": "555-0104",
+    "address": "321 Maple Drive"
+  },
+  {
+    "doctor_id": 5,
+    "department_id": 5,
+    "first_name": "Sarah",
+    "last_name": "Davis",
+    "specialization": "Orthopedist",
+    "phone_num": "555-0105",
+    "address": "654 Cedar Lane"
+  },
+  {
+    "doctor_id": 6,
+    "department_id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "specialization": "Cardiologist",
+    "phone_num": "555-0101",
+    "address": "123 Heart St"
+  },
+  {
+    "doctor_id": 7,
+    "department_id": 1,
+    "first_name": "Jane",
+    "last_name": "Roe",
+    "specialization": "Cardiologist",
+    "phone_num": "555-0102",
+    "address": "124 Heart St"
+  },
+  {
+    "doctor_id": 8,
+    "department_id": 5,
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "specialization": "General",
+    "phone_num": "555-0202",
+    "address": "456 Elm Street"
+  },
+  {
+    "doctor_id": 9,
+    "department_id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "specialization": "Cardiologist",
+    "phone_num": "555-0101",
+    "address": "123 Heart St"
+  },
+  {
+    "doctor_id": 10,
+    "department_id": 1,
+    "first_name": "Jane",
+    "last_name": "Roe",
+    "specialization": "Cardiologist",
+    "phone_num": "555-0102",
+    "address": "124 Heart St"
+  }
+]);
+
+db.dutyshift.insertMany([
+  {
+    "shift_id": 1,
+    "doctor_id": 1,
+    "department_id": 1,
+    "start_time": "08:00",
+    "end_time": "16:00"
+  },
+  {
+    "shift_id": 2,
+    "doctor_id": 2,
+    "department_id": 2,
+    "start_time": "09:00",
+    "end_time": "17:00"
+  },
+  {
+    "shift_id": 3,
+    "doctor_id": 3,
+    "department_id": 3,
+    "start_time": "10:00",
+    "end_time": "18:00"
+  },
+  {
+    "shift_id": 4,
+    "doctor_id": 4,
+    "department_id": 4,
+    "start_time": "11:00",
+    "end_time": "19:00"
+  },
+  {
+    "shift_id": 5,
+    "doctor_id": 5,
+    "department_id": 5,
+    "start_time": "12:00",
+    "end_time": "20:00"
+  }
+]);
+
+db.nurse.insertMany([
+  {
+    "nurse_id": 1,
+    "first_name": "Alice",
+    "last_name": "Headnurse",
+    "is_chef": "Yes",
+    "nurse_nurse_id": null
+  },
+  {
+    "nurse_id": 2,
+    "first_name": "Craig",
+    "last_name": "Chiefnurse",
+    "is_chef": "Yes",
+    "nurse_nurse_id": null
+  },
+  {
+    "nurse_id": 4,
+    "first_name": "Charlie",
+    "last_name": "Assistnurse",
+    "is_chef": "No",
+    "nurse_nurse_id": 1
+  },
+  {
+    "nurse_id": 5,
+    "first_name": "Diana",
+    "last_name": "Helpnurse",
+    "is_chef": "No",
+    "nurse_nurse_id": 2
+  },
+  {
+    "nurse_id": 3,
+    "first_name": "Bob",
+    "last_name": "Undernurse",
+    "is_chef": "Yes",
+    "nurse_nurse_id": null
+  },
+  {
+    "nurse_id": 6,
+    "first_name": "Eva",
+    "last_name": "Aidnurse",
+    "is_chef": "Yes",
+    "nurse_nurse_id": null
+  }
+]);
+
+db.patient.insertMany([
+  {
+    "patient_id": 1,
+    "room_id": 1,
+    "first_name": "Gary",
+    "last_name": "Wilson",
+    "dob": "1985-07-12",
+    "gender": "Male",
+    "address": "123 Birch Street"
+  },
+  {
+    "patient_id": 2,
+    "room_id": 2,
+    "first_name": "Hannah",
+    "last_name": "Clark",
+    "dob": "1990-05-16",
+    "gender": "Female",
+    "address": "234 Cedar Road"
+  },
+  {
+    "patient_id": 3,
+    "room_id": 3,
+    "first_name": "Ian",
+    "last_name": "Rodriguez",
+    "dob": "1978-11-22",
+    "gender": "Male",
+    "address": "345 Elm Avenue"
+  },
+  {
+    "patient_id": 4,
+    "room_id": 4,
+    "first_name": "Julia",
+    "last_name": "Lopez",
+    "dob": "2002-03-30",
+    "gender": "Female",
+    "address": "456 Pine Lane"
+  },
+  {
+    "patient_id": 5,
+    "room_id": 5,
+    "first_name": "Kyle",
+    "last_name": "Garcia",
+    "dob": "1966-01-19",
+    "gender": "Male",
+    "address": "567 Maple Parkway"
+  },
+  {
+    "patient_id": 6,
+    "room_id": 4,
+    "first_name": "Test",
+    "last_name": "Patient",
+    "dob": "2000-01-01",
+    "gender": "M",
+    "address": "123 Test Address"
+  },
+  {
+    "patient_id": 7,
+    "room_id": 4,
+    "first_name": "Gary",
+    "last_name": "Wilson",
+    "dob": "1985-07-12",
+    "gender": "Male",
+    "address": "123 Birch Street"
+  },
+  {
+    "patient_id": 8,
+    "room_id": 4,
+    "first_name": "Hannah",
+    "last_name": "Clark",
+    "dob": "1990-05-16",
+    "gender": "Female",
+    "address": "234 Cedar Road"
+  },
+  {
+    "patient_id": 9,
+    "room_id": 4,
+    "first_name": "Ian",
+    "last_name": "Rodriguez",
+    "dob": "1978-11-22",
+    "gender": "Male",
+    "address": "345 Elm Avenue"
+  },
+  {
+    "patient_id": 10,
+    "room_id": 4,
+    "first_name": "Julia",
+    "last_name": "Lopez",
+    "dob": "2002-03-30",
+    "gender": "Female",
+    "address": "456 Pine Lane"
+  },
+  {
+    "patient_id": 11,
+    "room_id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "dob": "1980-01-01",
+    "gender": "Male",
+    "address": "123 Main Street"
+  },
+  {
+    "patient_id": 12,
+    "room_id": 7,
+    "first_name": "Patient",
+    "last_name": "One",
+    "dob": "1980-01-01",
+    "gender": "Male",
+    "address": "123 Street"
+  },
+  {
+    "patient_id": 13,
+    "room_id": 8,
+    "first_name": "Patient",
+    "last_name": "Two",
+    "dob": "1981-02-02",
+    "gender": "Female",
+    "address": "124 Street"
+  },
+  {
+    "patient_id": 14,
+    "room_id": 9,
+    "first_name": "Patient",
+    "last_name": "Three",
+    "dob": "1982-03-03",
+    "gender": "Male",
+    "address": "125 Street"
+  },
+  {
+    "patient_id": 15,
+    "room_id": 10,
+    "first_name": "Patient",
+    "last_name": "Four",
+    "dob": "1983-04-04",
+    "gender": "Female",
+    "address": "126 Street"
+  },
+  {
+    "patient_id": 16,
+    "room_id": 11,
+    "first_name": "Patient",
+    "last_name": "Five",
+    "dob": "1984-05-05",
+    "gender": "Male",
+    "address": "127 Street"
+  },
+  {
+    "patient_id": 17,
+    "room_id": 7,
+    "first_name": "Patient",
+    "last_name": "Six",
+    "dob": "1985-06-06",
+    "gender": "Female",
+    "address": "128 Street"
+  },
+  {
+    "patient_id": 18,
+    "room_id": 8,
+    "first_name": "Patient",
+    "last_name": "Seven",
+    "dob": "1986-07-07",
+    "gender": "Male",
+    "address": "129 Street"
+  },
+  {
+    "patient_id": 19,
+    "room_id": 9,
+    "first_name": "Patient",
+    "last_name": "Eight",
+    "dob": "1987-08-08",
+    "gender": "Female",
+    "address": "130 Street"
+  },
+  {
+    "patient_id": 20,
+    "room_id": 10,
+    "first_name": "Patient",
+    "last_name": "Nine",
+    "dob": "1988-09-09",
+    "gender": "Male",
+    "address": "131 Street"
+  },
+  {
+    "patient_id": 21,
+    "room_id": 11,
+    "first_name": "Patient",
+    "last_name": "Ten",
+    "dob": "1989-10-10",
+    "gender": "Female",
+    "address": "132 Street"
+  },
+  {
+    "patient_id": 22,
+    "room_id": 7,
+    "first_name": "Patient",
+    "last_name": "Eleven",
+    "dob": "1990-11-11",
+    "gender": "Male",
+    "address": "133 Street"
+  }
+]);
+
+db.prescription.insertMany([
+  {
+    "prescription_id": 1,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 2,
+    "doctor_id": 2,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 3,
+    "doctor_id": 3,
+    "patient_id": 3
+  },
+  {
+    "prescription_id": 4,
+    "doctor_id": 4,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 5,
+    "doctor_id": 5,
+    "patient_id": 5
+  },
+  {
+    "prescription_id": 6,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 7,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 8,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 9,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 10,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 11,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 12,
+    "doctor_id": 1,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 13,
+    "doctor_id": 1,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 14,
+    "doctor_id": 1,
+    "patient_id": 8
+  },
+  {
+    "prescription_id": 15,
+    "doctor_id": 1,
+    "patient_id": 10
+  },
+  {
+    "prescription_id": 16,
+    "doctor_id": 1,
+    "patient_id": 13
+  },
+  {
+    "prescription_id": 17,
+    "doctor_id": 1,
+    "patient_id": 15
+  },
+  {
+    "prescription_id": 18,
+    "doctor_id": 1,
+    "patient_id": 17
+  },
+  {
+    "prescription_id": 19,
+    "doctor_id": 1,
+    "patient_id": 19
+  },
+  {
+    "prescription_id": 20,
+    "doctor_id": 1,
+    "patient_id": 21
+  },
+  {
+    "prescription_id": 21,
+    "doctor_id": 6,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 22,
+    "doctor_id": 6,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 23,
+    "doctor_id": 6,
+    "patient_id": 8
+  },
+  {
+    "prescription_id": 24,
+    "doctor_id": 6,
+    "patient_id": 10
+  },
+  {
+    "prescription_id": 25,
+    "doctor_id": 6,
+    "patient_id": 13
+  },
+  {
+    "prescription_id": 26,
+    "doctor_id": 6,
+    "patient_id": 15
+  },
+  {
+    "prescription_id": 27,
+    "doctor_id": 6,
+    "patient_id": 17
+  },
+  {
+    "prescription_id": 28,
+    "doctor_id": 6,
+    "patient_id": 19
+  },
+  {
+    "prescription_id": 29,
+    "doctor_id": 6,
+    "patient_id": 21
+  },
+  {
+    "prescription_id": 30,
+    "doctor_id": 7,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 31,
+    "doctor_id": 7,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 32,
+    "doctor_id": 7,
+    "patient_id": 8
+  },
+  {
+    "prescription_id": 33,
+    "doctor_id": 7,
+    "patient_id": 10
+  },
+  {
+    "prescription_id": 34,
+    "doctor_id": 7,
+    "patient_id": 13
+  },
+  {
+    "prescription_id": 35,
+    "doctor_id": 7,
+    "patient_id": 15
+  },
+  {
+    "prescription_id": 36,
+    "doctor_id": 7,
+    "patient_id": 17
+  },
+  {
+    "prescription_id": 37,
+    "doctor_id": 7,
+    "patient_id": 19
+  },
+  {
+    "prescription_id": 38,
+    "doctor_id": 7,
+    "patient_id": 21
+  }
+]);
+
+db.room.insertMany([
+  {
+    "room_id": 3,
+    "department_id": 2,
+    "is_vip": true,
+    "occupancy": 1
+  },
+  {
+    "room_id": 5,
+    "department_id": 4,
+    "is_vip": true,
+    "occupancy": 1
+  },
+  {
+    "room_id": 6,
+    "department_id": 5,
+    "is_vip": true,
+    "occupancy": 1
+  },
+  {
+    "room_id": 1,
+    "department_id": 1,
+    "is_vip": false,
+    "occupancy": 6
+  },
+  {
+    "room_id": 2,
+    "department_id": 2,
+    "is_vip": false,
+    "occupancy": 6
+  },
+  {
+    "room_id": 4,
+    "department_id": 3,
+    "is_vip": false,
+    "occupancy": 6
+  },
+  {
+    "room_id": 7,
+    "department_id": 7,
+    "is_vip": false,
+    "occupancy": 6
+  },
+  {
+    "room_id": 8,
+    "department_id": 7,
+    "is_vip": false,
+    "occupancy": 6
+  },
+  {
+    "room_id": 9,
+    "department_id": 7,
+    "is_vip": false,
+    "occupancy": 6
+  },
+  {
+    "room_id": 10,
+    "department_id": 7,
+    "is_vip": false,
+    "occupancy": 6
+  },
+  {
+    "room_id": 11,
+    "department_id": 7,
+    "is_vip": false,
+    "occupancy": 6
+  }
+]);
+
+db.treatment.insertMany([
+  {
+    "nurse_id": 1,
+    "prescription_id": 1,
+    "treatment_description": "Blood Pressure Monitoring"
+  },
+  {
+    "nurse_id": 2,
+    "prescription_id": 2,
+    "treatment_description": "Medication Administration"
+  },
+  {
+    "nurse_id": 3,
+    "prescription_id": 3,
+    "treatment_description": "Chemotherapy"
+  },
+  {
+    "nurse_id": 4,
+    "prescription_id": 4,
+    "treatment_description": "Routine Checkup"
+  },
+  {
+    "nurse_id": 5,
+    "prescription_id": 5,
+    "treatment_description": "Orthopedic Surgery"
+  },
+  {
+    "nurse_id": 6,
+    "prescription_id": 3,
+    "treatment_description": "Chemotherapy"
+  }
+]);
+
+db.visitor.insertMany([
+  {
+    "visitor_id": 1,
+    "patient_id": 1,
+    "first_name": "Laura",
+    "last_name": "Moore",
+    "relation": "Sister",
+    "visit_date_and_time": "2023-07-01 10:00"
+  },
+  {
+    "visitor_id": 2,
+    "patient_id": 2,
+    "first_name": "Mark",
+    "last_name": "White",
+    "relation": "Brother",
+    "visit_date_and_time": "2023-07-02 11:00"
+  },
+  {
+    "visitor_id": 3,
+    "patient_id": 3,
+    "first_name": "Nancy",
+    "last_name": "Hall",
+    "relation": "Mother",
+    "visit_date_and_time": "2023-07-03 12:00"
+  },
+  {
+    "visitor_id": 4,
+    "patient_id": 4,
+    "first_name": "Oscar",
+    "last_name": "Young",
+    "relation": "Father",
+    "visit_date_and_time": "2023-07-04 13:00"
+  },
+  {
+    "visitor_id": 5,
+    "patient_id": 5,
+    "first_name": "Patricia",
+    "last_name": "King",
+    "relation": "Daughter",
+    "visit_date_and_time": "2023-07-05 14:00"
+  },
+  {
+    "visitor_id": 6,
+    "patient_id": null,
+    "first_name": "John",
+    "last_name": "Doe",
+    "relation": "Friend",
+    "visit_date_and_time": "2023-03-15 14:00"
+  }
+]);
+
+
+// Query 1: Join doctors with departments
+db.doctor.aggregate([
+  {
+    $lookup: {
+      from: "departments",
+      localField: "department_id",
+      foreignField: "_id",
+      as: "departmentDetails"
+    }
+  }
+]);
+
+// Query 2: Join nurses with treatments
+db.nurse.aggregate([
+  {
+    $lookup: {
+      from: "treatments",
+      localField: "_id",
+      foreignField: "nurse_id",
+      as: "treatmentDetails"
+    }
+  }
+]);
+
+// Query 3: Join patients with rooms
+db.patient.aggregate([
+  {
+    $lookup: {
+      from: "rooms",
+      localField: "room_id",
+      foreignField: "_id",
+      as: "roomDetails"
+    }
+  }
+]);
+
+// Query 4: Join doctors with dutyshifts
+db.doctor.aggregate([
+  {
+    $lookup: {
+      from: "dutyshifts",
+      localField: "_id",
+      foreignField: "doctor_id",
+      as: "dutyshiftDetails"
+    }
+  }
+]);
+
+// Query 5: Join prescriptions with patients
+db.prescription.aggregate([
+  {
+    $lookup: {
+      from: "patients",
+      localField: "patient_id",
+      foreignField: "_id",
+      as: "patientDetails"
+    }
+  }
+
+]);
+
+// Query 6: Join prescriptions with doctors
+db.prescription.aggregate([
+  {
+    $lookup: {
+      from: "doctors",
+      localField: "doctor_id",
+      foreignField: "_id",
+      as: "doctorDetails"
+    }
+  }
+]);
+
+// Query 7: Join visitors with patients
+db.visitor.aggregate([
+  {
+    $lookup: {
+      from: "patients",
+      localField: "patient_id",
+      foreignField: "_id",
+      as: "patientDetails"
+    }
+  }
+]);
+
+// Query 8: Join treatments with prescriptions
+db.treatment.aggregate([
+  {
+    $lookup: {
+      from: "prescriptions",
+      localField: "prescription_id",
+      foreignField: "_id",
+      as: "prescriptionDetails"
+    }
+  }
+]);
+
+// Query 9: Join doctors with prescriptions and patients
+db.doctor.aggregate([
+  {
+    $lookup: {
+      from: "prescriptions",
+      localField: "_id",
+      foreignField: "doctor_id",
+      as: "prescriptionDetails"
+    }
+  },
+  {
+    $unwind: "$prescriptionDetails"
+  },
+  {
+    $lookup: {
+      from: "patients",
+      localField: "prescriptionDetails.patient_id",
+      foreignField: "_id",
+      as: "patientDetails"
+    }
+  }
+]);
+
+// Query 10: Join dutyshifts with departments and doctors
+db.dutyshift.aggregate([
+  {
+    $lookup: {
+      from: "departments",
+      localField: "department_id",
+      foreignField: "_id",
+      as: "departmentDetails"
+    }
+  },
+  {
+    $unwind: "$departmentDetails"
+  },
+  {
+    $lookup: {
+      from: "doctors",
+      localField: "doctor_id",
+      foreignField: "_id",
+      as: "doctorDetails"
+    }
+  }
+]);
+
+// Query 11: Join nurses with rooms
+db.nurse.aggregate([
+  {
+    $lookup: {
+      from: "rooms",
+      localField: "room_id",
+      foreignField: "_id",
+      as: "roomDetails"
+    }
+  }
+]);
+
+// Query 12: Join departments with rooms
+db.department.aggregate([
+  {
+    $lookup: {
+      from: "rooms",
+      localField: "_id",
+      foreignField: "department_id",
+      as: "roomDetails"
+    }
+  }
+]);
+
+// Query 13: Join patients with prescriptions
+db.patient.aggregate([
+  {
+    $lookup: {
+      from: "prescriptions",
+      localField: "_id",
+      foreignField: "patient_id",
+      as: "prescriptionDetails"
+    }
+  }
+]);
+
+// Query 14: Join visitors with doctors
+db.visitor.aggregate([
+  {
+    $lookup: {
+      from: "doctors",
+      localField: "doctor_id",
+      foreignField: "_id",
+      as: "doctorDetails"
+    }
+  }
+]);
+
+// Query 15: Join nurses with patients
+db.nurse.aggregate([
+  {
+    $lookup: {
+      from: "patients",
+      localField: "_id",
+      foreignField: "nurse_id",
+      as: "patientDetails"
+    }
+  }
+]);
+
+// Query 16: Join doctors with treatments
+db.doctor.aggregate([
+  {
+    $lookup: {
+      from: "treatments",
+      localField: "_id",
+      foreignField: "doctor_id",
+      as: "treatmentDetails"
+    }
+  }
+]);
+
+// Query 17: Join rooms with treatments
+db.room.aggregate([
+  {
+    $lookup: {
+      from: "treatments",
+      localField: "_id",
+      foreignField: "room_id",
+      as: "treatmentDetails"
+    }
+  }
+]);
+
+// Query 18: Join departments with treatments
+db.department.aggregate([
+  {
+    $lookup: {
+      from: "treatments",
+      localField: "_id",
+      foreignField: "department_id",
+      as: "treatmentDetails"
+    }
+  }
+]);
+
+// Query 19: Join prescriptions with rooms
+db.prescription.aggregate([
+  {
+    $lookup: {
+      from: "rooms",
+      localField: "room_id",
+      foreignField: "_id",
+      as: "roomDetails"
+    }
+  }
+]);
+
+// Query 20: Join visitors with treatments
+db.visitor.aggregate([
+  {
+    $lookup: {
+      from: "treatments",
+      localField: "_id",
+      foreignField: "visitor_id",
+      as: "treatmentDetails"
+    }
+  }
+]);
+
+// Query 21: Join nurses with visitors
+db.nurse.aggregate([
+  {
+    $lookup: {
+      from: "visitors",
+      localField: "_id",
+      foreignField: "nurse_id",
+      as: "visitorDetails"
+    }
+  }
+]);
+
+// Query 22: Join departments with visitors
+db.department.aggregate([
+  {
+    $lookup: {
+      from: "visitors",
+      localField: "_id",
+      foreignField: "department_id",
+      as: "visitorDetails"
+    }
+  }
+]);
+
+// Query 23: Join patients with treatments
+db.patient.aggregate([
+  {
+    $lookup: {
+      from: "treatments",
+      localField: "_id",
+      foreignField: "patient_id",
+      as: "treatmentDetails"
+    }
+  }
+]);
+
+// Query 24: Join dutyshifts with patients
+db.dutyshift.aggregate([
+  {
+    $lookup: {
+      from: "patients",
+      localField: "patient_id",
+      foreignField: "_id",
+      as: "patientDetails"
+    }
+  }
+]);
+
+// Query 25: Join doctors with visitors
+db.doctor.aggregate([
+  {
+    $lookup: {
+      from: "visitors",
+      localField: "_id",
+      foreignField: "doctor_id",
+      as: "visitorDetails"
+    }
+  }
+]);
