@@ -1,0 +1,12 @@
+room_id,department_id,is_vip,occupancy
+3,2,true,1
+5,4,true,1
+6,5,true,1
+1,1,false,6
+2,2,false,6
+4,3,false,6
+7,7,false,6
+8,7,false,6
+9,7,false,6
+10,7,false,6
+11,7,false,6

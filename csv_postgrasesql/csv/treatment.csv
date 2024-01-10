@@ -1,0 +1,7 @@
+nurse_id,prescription_id,treatment_description
+1,1,Blood Pressure Monitoring
+2,2,Medication Administration
+3,3,Chemotherapy
+4,4,Routine Checkup
+5,5,Orthopedic Surgery
+6,3,Chemotherapy
