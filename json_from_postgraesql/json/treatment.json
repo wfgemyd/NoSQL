@@ -1,0 +1,32 @@
+[
+  {
+    "nurse_id": 1,
+    "prescription_id": 1,
+    "treatment_description": "Blood Pressure Monitoring"
+  },
+  {
+    "nurse_id": 2,
+    "prescription_id": 2,
+    "treatment_description": "Medication Administration"
+  },
+  {
+    "nurse_id": 3,
+    "prescription_id": 3,
+    "treatment_description": "Chemotherapy"
+  },
+  {
+    "nurse_id": 4,
+    "prescription_id": 4,
+    "treatment_description": "Routine Checkup"
+  },
+  {
+    "nurse_id": 5,
+    "prescription_id": 5,
+    "treatment_description": "Orthopedic Surgery"
+  },
+  {
+    "nurse_id": 6,
+    "prescription_id": 3,
+    "treatment_description": "Chemotherapy"
+  }
+]

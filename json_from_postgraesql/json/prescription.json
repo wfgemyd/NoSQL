@@ -1,0 +1,192 @@
+[
+  {
+    "prescription_id": 1,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 2,
+    "doctor_id": 2,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 3,
+    "doctor_id": 3,
+    "patient_id": 3
+  },
+  {
+    "prescription_id": 4,
+    "doctor_id": 4,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 5,
+    "doctor_id": 5,
+    "patient_id": 5
+  },
+  {
+    "prescription_id": 6,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 7,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 8,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 9,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 10,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 11,
+    "doctor_id": 1,
+    "patient_id": 1
+  },
+  {
+    "prescription_id": 12,
+    "doctor_id": 1,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 13,
+    "doctor_id": 1,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 14,
+    "doctor_id": 1,
+    "patient_id": 8
+  },
+  {
+    "prescription_id": 15,
+    "doctor_id": 1,
+    "patient_id": 10
+  },
+  {
+    "prescription_id": 16,
+    "doctor_id": 1,
+    "patient_id": 13
+  },
+  {
+    "prescription_id": 17,
+    "doctor_id": 1,
+    "patient_id": 15
+  },
+  {
+    "prescription_id": 18,
+    "doctor_id": 1,
+    "patient_id": 17
+  },
+  {
+    "prescription_id": 19,
+    "doctor_id": 1,
+    "patient_id": 19
+  },
+  {
+    "prescription_id": 20,
+    "doctor_id": 1,
+    "patient_id": 21
+  },
+  {
+    "prescription_id": 21,
+    "doctor_id": 6,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 22,
+    "doctor_id": 6,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 23,
+    "doctor_id": 6,
+    "patient_id": 8
+  },
+  {
+    "prescription_id": 24,
+    "doctor_id": 6,
+    "patient_id": 10
+  },
+  {
+    "prescription_id": 25,
+    "doctor_id": 6,
+    "patient_id": 13
+  },
+  {
+    "prescription_id": 26,
+    "doctor_id": 6,
+    "patient_id": 15
+  },
+  {
+    "prescription_id": 27,
+    "doctor_id": 6,
+    "patient_id": 17
+  },
+  {
+    "prescription_id": 28,
+    "doctor_id": 6,
+    "patient_id": 19
+  },
+  {
+    "prescription_id": 29,
+    "doctor_id": 6,
+    "patient_id": 21
+  },
+  {
+    "prescription_id": 30,
+    "doctor_id": 7,
+    "patient_id": 2
+  },
+  {
+    "prescription_id": 31,
+    "doctor_id": 7,
+    "patient_id": 4
+  },
+  {
+    "prescription_id": 32,
+    "doctor_id": 7,
+    "patient_id": 8
+  },
+  {
+    "prescription_id": 33,
+    "doctor_id": 7,
+    "patient_id": 10
+  },
+  {
+    "prescription_id": 34,
+    "doctor_id": 7,
+    "patient_id": 13
+  },
+  {
+    "prescription_id": 35,
+    "doctor_id": 7,
+    "patient_id": 15
+  },
+  {
+    "prescription_id": 36,
+    "doctor_id": 7,
+    "patient_id": 17
+  },
+  {
+    "prescription_id": 37,
+    "doctor_id": 7,
+    "patient_id": 19
+  },
+  {
+    "prescription_id": 38,
+    "doctor_id": 7,
+    "patient_id": 21
+  }
+]

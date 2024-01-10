@@ -1,0 +1,50 @@
+[
+  {
+    "visitor_id": 1,
+    "patient_id": 1,
+    "first_name": "Laura",
+    "last_name": "Moore",
+    "relation": "Sister",
+    "visit_date_and_time": "2023-07-01 10:00"
+  },
+  {
+    "visitor_id": 2,
+    "patient_id": 2,
+    "first_name": "Mark",
+    "last_name": "White",
+    "relation": "Brother",
+    "visit_date_and_time": "2023-07-02 11:00"
+  },
+  {
+    "visitor_id": 3,
+    "patient_id": 3,
+    "first_name": "Nancy",
+    "last_name": "Hall",
+    "relation": "Mother",
+    "visit_date_and_time": "2023-07-03 12:00"
+  },
+  {
+    "visitor_id": 4,
+    "patient_id": 4,
+    "first_name": "Oscar",
+    "last_name": "Young",
+    "relation": "Father",
+    "visit_date_and_time": "2023-07-04 13:00"
+  },
+  {
+    "visitor_id": 5,
+    "patient_id": 5,
+    "first_name": "Patricia",
+    "last_name": "King",
+    "relation": "Daughter",
+    "visit_date_and_time": "2023-07-05 14:00"
+  },
+  {
+    "visitor_id": 6,
+    "patient_id": null,
+    "first_name": "John",
+    "last_name": "Doe",
+    "relation": "Friend",
+    "visit_date_and_time": "2023-03-15 14:00"
+  }
+]
