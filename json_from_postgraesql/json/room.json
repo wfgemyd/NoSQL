@@ -1,9 +1,27 @@
 [
   {
+    "room_id": 1,
+    "department_id": 1,
+    "is_vip": false,
+    "occupancy": 1
+  },
+  {
+    "room_id": 2,
+    "department_id": 2,
+    "is_vip": false,
+    "occupancy": 2
+  },
+  {
     "room_id": 3,
     "department_id": 2,
     "is_vip": true,
     "occupancy": 1
+  },
+  {
+    "room_id": 4,
+    "department_id": 3,
+    "is_vip": false,
+    "occupancy": 2
   },
   {
     "room_id": 5,
@@ -16,53 +34,5 @@
     "department_id": 5,
     "is_vip": true,
     "occupancy": 1
-  },
-  {
-    "room_id": 1,
-    "department_id": 1,
-    "is_vip": false,
-    "occupancy": 6
-  },
-  {
-    "room_id": 2,
-    "department_id": 2,
-    "is_vip": false,
-    "occupancy": 6
-  },
-  {
-    "room_id": 4,
-    "department_id": 3,
-    "is_vip": false,
-    "occupancy": 6
-  },
-  {
-    "room_id": 7,
-    "department_id": 7,
-    "is_vip": false,
-    "occupancy": 6
-  },
-  {
-    "room_id": 8,
-    "department_id": 7,
-    "is_vip": false,
-    "occupancy": 6
-  },
-  {
-    "room_id": 9,
-    "department_id": 7,
-    "is_vip": false,
-    "occupancy": 6
-  },
-  {
-    "room_id": 10,
-    "department_id": 7,
-    "is_vip": false,
-    "occupancy": 6
-  },
-  {
-    "room_id": 11,
-    "department_id": 7,
-    "is_vip": false,
-    "occupancy": 6
   }
 ]

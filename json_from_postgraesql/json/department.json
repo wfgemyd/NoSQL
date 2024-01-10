@@ -28,10 +28,5 @@
     "department_id": 6,
     "department_name": "Orthopedics",
     "phone_num_extension": "1005"
-  },
-  {
-    "department_id": 7,
-    "department_name": "Oncology",
-    "phone_num_extension": "4001"
   }
 ]

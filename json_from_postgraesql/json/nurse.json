@@ -14,6 +14,13 @@
     "nurse_nurse_id": null
   },
   {
+    "nurse_id": 3,
+    "first_name": "Bob",
+    "last_name": "Undernurse",
+    "is_chef": "No",
+    "nurse_nurse_id": 1
+  },
+  {
     "nurse_id": 4,
     "first_name": "Charlie",
     "last_name": "Assistnurse",
@@ -28,17 +35,10 @@
     "nurse_nurse_id": 2
   },
   {
-    "nurse_id": 3,
-    "first_name": "Bob",
-    "last_name": "Undernurse",
-    "is_chef": "Yes",
-    "nurse_nurse_id": null
-  },
-  {
     "nurse_id": 6,
     "first_name": "Eva",
     "last_name": "Aidnurse",
-    "is_chef": "Yes",
-    "nurse_nurse_id": null
+    "is_chef": "No",
+    "nurse_nurse_id": 2
   }
 ]

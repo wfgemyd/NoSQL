@@ -23,10 +23,5 @@
     "nurse_id": 5,
     "prescription_id": 5,
     "treatment_description": "Orthopedic Surgery"
-  },
-  {
-    "nurse_id": 6,
-    "prescription_id": 3,
-    "treatment_description": "Chemotherapy"
   }
 ]

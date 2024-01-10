@@ -43,50 +43,5 @@
     "specialization": "Orthopedist",
     "phone_num": "555-0105",
     "address": "654 Cedar Lane"
-  },
-  {
-    "doctor_id": 6,
-    "department_id": 1,
-    "first_name": "John",
-    "last_name": "Doe",
-    "specialization": "Cardiologist",
-    "phone_num": "555-0101",
-    "address": "123 Heart St"
-  },
-  {
-    "doctor_id": 7,
-    "department_id": 1,
-    "first_name": "Jane",
-    "last_name": "Roe",
-    "specialization": "Cardiologist",
-    "phone_num": "555-0102",
-    "address": "124 Heart St"
-  },
-  {
-    "doctor_id": 8,
-    "department_id": 5,
-    "first_name": "Jane",
-    "last_name": "Smith",
-    "specialization": "General",
-    "phone_num": "555-0202",
-    "address": "456 Elm Street"
-  },
-  {
-    "doctor_id": 9,
-    "department_id": 1,
-    "first_name": "John",
-    "last_name": "Doe",
-    "specialization": "Cardiologist",
-    "phone_num": "555-0101",
-    "address": "123 Heart St"
-  },
-  {
-    "doctor_id": 10,
-    "department_id": 1,
-    "first_name": "Jane",
-    "last_name": "Roe",
-    "specialization": "Cardiologist",
-    "phone_num": "555-0102",
-    "address": "124 Heart St"
   }
 ]
