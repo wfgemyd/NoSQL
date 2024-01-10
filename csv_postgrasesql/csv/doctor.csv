@@ -4,8 +4,3 @@ doctor_id,department_id,first_name,last_name,specialization,phone_num,address
 3,3,Emily,Jones,Oncologist,555-0103,789 Pine Boulevard
 4,4,William,Brown,Pediatrician,555-0104,321 Maple Drive
 5,5,Sarah,Davis,Orthopedist,555-0105,654 Cedar Lane
-6,1,John,Doe,Cardiologist,555-0101,123 Heart St
-7,1,Jane,Roe,Cardiologist,555-0102,124 Heart St
-8,5,Jane,Smith,General,555-0202,456 Elm Street
-9,1,John,Doe,Cardiologist,555-0101,123 Heart St
-10,1,Jane,Roe,Cardiologist,555-0102,124 Heart St

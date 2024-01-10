@@ -1,7 +1,7 @@
 nurse_id,first_name,last_name,is_chef,nurse_nurse_id
 1,Alice,Headnurse,Yes,
 2,Craig,Chiefnurse,Yes,
+3,Bob,Undernurse,No,1
 4,Charlie,Assistnurse,No,1
 5,Diana,Helpnurse,No,2
-3,Bob,Undernurse,Yes,
-6,Eva,Aidnurse,Yes,
+6,Eva,Aidnurse,No,2
