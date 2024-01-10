@@ -1,0 +1,7 @@
+_id,first_name,last_name,patient_id,relation,visit_date_and_time,visitor_id
+659ea1a31995df03fda596b8,Laura,Moore,1,Sister,2023-07-01 10:00,1
+659ea1a31995df03fda596b9,Mark,White,2,Brother,2023-07-02 11:00,2
+659ea1a31995df03fda596ba,Nancy,Hall,3,Mother,2023-07-03 12:00,3
+659ea1a31995df03fda596bb,Oscar,Young,4,Father,2023-07-04 13:00,4
+659ea1a31995df03fda596bc,Patricia,King,5,Daughter,2023-07-05 14:00,5
+659ea1a31995df03fda596bd,John,Doe,,Friend,2023-03-15 14:00,6

@@ -1,0 +1,7 @@
+_id,nurse_id,prescription_id,treatment_description
+659ea1a31995df03fda596b2,1,1,Blood Pressure Monitoring
+659ea1a31995df03fda596b3,2,2,Medication Administration
+659ea1a31995df03fda596b4,3,3,Chemotherapy
+659ea1a31995df03fda596b5,4,4,Routine Checkup
+659ea1a31995df03fda596b6,5,5,Orthopedic Surgery
+659ea1a31995df03fda596b7,6,3,Chemotherapy

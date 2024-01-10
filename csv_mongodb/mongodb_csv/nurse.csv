@@ -1,0 +1,7 @@
+_id,first_name,is_chef,last_name,nurse_id,nurse_nurse_id
+659ea1a11995df03fda59665,Alice,Yes,Headnurse,1,
+659ea1a11995df03fda59666,Craig,Yes,Chiefnurse,2,
+659ea1a11995df03fda59667,Charlie,No,Assistnurse,4,1
+659ea1a11995df03fda59668,Diana,No,Helpnurse,5,2
+659ea1a11995df03fda59669,Bob,Yes,Undernurse,3,
+659ea1a11995df03fda5966a,Eva,Yes,Aidnurse,6,

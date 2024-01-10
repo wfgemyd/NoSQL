@@ -1,0 +1,11 @@
+_id,address,department_id,doctor_id,first_name,last_name,phone_num,specialization
+659ea1a11995df03fda59656,123 Elm Street,1,1,John,Doe,555-0101,Cardiologist
+659ea1a11995df03fda59657,456 Oak Avenue,2,2,Jane,Smith,555-0102,Neurologist
+659ea1a11995df03fda59658,789 Pine Boulevard,3,3,Emily,Jones,555-0103,Oncologist
+659ea1a11995df03fda59659,321 Maple Drive,4,4,William,Brown,555-0104,Pediatrician
+659ea1a11995df03fda5965a,654 Cedar Lane,5,5,Sarah,Davis,555-0105,Orthopedist
+659ea1a11995df03fda5965b,123 Heart St,1,6,John,Doe,555-0101,Cardiologist
+659ea1a11995df03fda5965c,124 Heart St,1,7,Jane,Roe,555-0102,Cardiologist
+659ea1a11995df03fda5965d,456 Elm Street,5,8,Jane,Smith,555-0202,General
+659ea1a11995df03fda5965e,123 Heart St,1,9,John,Doe,555-0101,Cardiologist
+659ea1a11995df03fda5965f,124 Heart St,1,10,Jane,Roe,555-0102,Cardiologist

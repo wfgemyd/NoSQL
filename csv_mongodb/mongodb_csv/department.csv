@@ -1,0 +1,15 @@
+_id,department_id,department_name,phone_num_extension
+659ea1551995df03fda59647,1,Cardiology,1001
+659ea1551995df03fda59648,2,Neurology,1002
+659ea1551995df03fda59649,3,Oncology,1003
+659ea1551995df03fda5964a,4,Pediatrics,1004
+659ea1551995df03fda5964b,5,General Medicine,1234
+659ea1551995df03fda5964c,6,Orthopedics,1005
+659ea1551995df03fda5964d,7,Oncology,4001
+659ea1a01995df03fda5964f,1,Cardiology,1001
+659ea1a01995df03fda59650,2,Neurology,1002
+659ea1a01995df03fda59651,3,Oncology,1003
+659ea1a01995df03fda59652,4,Pediatrics,1004
+659ea1a01995df03fda59653,5,General Medicine,1234
+659ea1a01995df03fda59654,6,Orthopedics,1005
+659ea1a01995df03fda59655,7,Oncology,4001
