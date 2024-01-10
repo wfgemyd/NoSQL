@@ -387,24 +387,24 @@ db.treatment.find({});
 db.visitor.find({});
 
 
-
 // Query 1: Join doctors with departments
 db.doctor.aggregate([
   {
     $lookup: {
-      from: "departments",
-      localField: "department_id",
-      foreignField: "_id",
+      from: "department",
+      localField: "department_id", // ObjectId in the doctor collection
+      foreignField: "_id",        // _id field in the department collection
       as: "departmentDetails"
     }
   }
 ]);
 
+
 // Query 2: Join nurses with treatments
 db.nurse.aggregate([
   {
     $lookup: {
-      from: "treatments",
+      from: "treatment",
       localField: "_id",
       foreignField: "nurse_id",
       as: "treatmentDetails"
@@ -412,23 +412,25 @@ db.nurse.aggregate([
   }
 ]);
 
-// Query 3: Join patients with rooms
+// Query 3: Join patients with rooms using the ObjectId reference for room_id
 db.patient.aggregate([
   {
     $lookup: {
-      from: "rooms",
-      localField: "room_id",
-      foreignField: "_id",
+      from: "room", 
+      localField: "room_id", 
+      foreignField: "_id", 
       as: "roomDetails"
     }
   }
 ]);
 
+
+
 // Query 4: Join doctors with dutyshifts
 db.doctor.aggregate([
   {
     $lookup: {
-      from: "dutyshifts",
+      from: "dutyshift",
       localField: "_id",
       foreignField: "doctor_id",
       as: "dutyshiftDetails"
@@ -440,7 +442,7 @@ db.doctor.aggregate([
 db.prescription.aggregate([
   {
     $lookup: {
-      from: "patients",
+      from: "patient",
       localField: "patient_id",
       foreignField: "_id",
       as: "patientDetails"
@@ -453,7 +455,7 @@ db.prescription.aggregate([
 db.prescription.aggregate([
   {
     $lookup: {
-      from: "doctors",
+      from: "doctor",
       localField: "doctor_id",
       foreignField: "_id",
       as: "doctorDetails"
@@ -465,7 +467,7 @@ db.prescription.aggregate([
 db.visitor.aggregate([
   {
     $lookup: {
-      from: "patients",
+      from: "patient",
       localField: "patient_id",
       foreignField: "_id",
       as: "patientDetails"
@@ -477,19 +479,20 @@ db.visitor.aggregate([
 db.treatment.aggregate([
   {
     $lookup: {
-      from: "prescriptions",
+      from: "prescription",
       localField: "prescription_id",
-      foreignField: "_id",
+      foreignField: "prescription_id",
       as: "prescriptionDetails"
     }
   }
 ]);
 
+
 // Query 9: Join doctors with prescriptions and patients
 db.doctor.aggregate([
   {
     $lookup: {
-      from: "prescriptions",
+      from: "prescription",
       localField: "_id",
       foreignField: "doctor_id",
       as: "prescriptionDetails"
@@ -500,7 +503,7 @@ db.doctor.aggregate([
   },
   {
     $lookup: {
-      from: "patients",
+      from: "patient",
       localField: "prescriptionDetails.patient_id",
       foreignField: "_id",
       as: "patientDetails"
@@ -512,7 +515,7 @@ db.doctor.aggregate([
 db.dutyshift.aggregate([
   {
     $lookup: {
-      from: "departments",
+      from: "department",
       localField: "department_id",
       foreignField: "_id",
       as: "departmentDetails"
@@ -523,7 +526,7 @@ db.dutyshift.aggregate([
   },
   {
     $lookup: {
-      from: "doctors",
+      from: "doctor",
       localField: "doctor_id",
       foreignField: "_id",
       as: "doctorDetails"
@@ -535,10 +538,27 @@ db.dutyshift.aggregate([
 db.nurse.aggregate([
   {
     $lookup: {
-      from: "rooms",
-      localField: "room_id",
+      from: "treatment",
+      localField: "_id",
+      foreignField: "nurse_id",
+      as: "treatmentDetails"
+    }
+  },
+  {
+    $unwind: "$treatmentDetails"
+  },
+  {
+    $lookup: {
+      from: "room",
+      localField: "treatmentDetails.room_id",
       foreignField: "_id",
       as: "roomDetails"
+    }
+  },
+  {
+    $unwind: {
+      path: "$roomDetails",
+      preserveNullAndEmptyArrays: true //keep nurses in the results even if they have no associated room.
     }
   }
 ]);
@@ -547,7 +567,7 @@ db.nurse.aggregate([
 db.department.aggregate([
   {
     $lookup: {
-      from: "rooms",
+      from: "room",
       localField: "_id",
       foreignField: "department_id",
       as: "roomDetails"
@@ -559,7 +579,7 @@ db.department.aggregate([
 db.patient.aggregate([
   {
     $lookup: {
-      from: "prescriptions",
+      from: "prescription",
       localField: "_id",
       foreignField: "patient_id",
       as: "prescriptionDetails"
@@ -571,37 +591,95 @@ db.patient.aggregate([
 db.visitor.aggregate([
   {
     $lookup: {
-      from: "doctors",
-      localField: "doctor_id",
+      from: "patient",
+      localField: "patient_id",
       foreignField: "_id",
+      as: "patientDetails"
+    }
+  },
+  {
+    $unwind: "$patientDetails"
+  },
+  {
+    $lookup: {
+      from: "doctor",
+      localField: "patientDetails.doctor_id",
+      foreignField: "doctor_id",
       as: "doctorDetails"
+    }
+  },
+  {
+    $unwind: {
+      path: "$doctorDetails",
+      preserveNullAndEmptyArrays: true //keep visitors without a matched doctor in the results
     }
   }
 ]);
 
+
 // Query 15: Join nurses with patients
+// Join nurses with treatments, and then join the resulting documents with patients
 db.nurse.aggregate([
   {
     $lookup: {
-      from: "patients",
+      from: "treatment",
       localField: "_id",
       foreignField: "nurse_id",
+      as: "treatmentDetails"
+    }
+  },
+  {
+    $unwind: {
+      path: "$treatmentDetails",
+      preserveNullAndEmptyArrays: true // To keep nurses without treatments in the result
+    }
+  },
+  {
+    $lookup: {
+      from: "patient",
+      localField: "treatmentDetails.patient_id",
+      foreignField: "_id",
       as: "patientDetails"
+    }
+  },
+  {
+    $unwind: {
+      path: "$patientDetails",
+      preserveNullAndEmptyArrays: true // To keep nurses without patients in the result
     }
   }
 ]);
+
 
 // Query 16: Join doctors with treatments
 db.doctor.aggregate([
   {
     $lookup: {
-      from: "treatments",
+      from: "prescription",
       localField: "_id",
       foreignField: "doctor_id",
+      as: "prescriptionDetails"
+    }
+  },
+  {
+    $unwind: "$prescriptionDetails"
+  },
+  {
+    $lookup: {
+      from: "treatment",
+      localField: "prescriptionDetails._id",
+      foreignField: "prescription_id",
       as: "treatmentDetails"
+    }
+  },
+  {
+    $unwind: {
+      path: "$treatmentDetails",
+      preserveNullAndEmptyArrays: true
     }
   }
 ]);
+
 
 // Query 17: Join rooms with treatments
 db.room.aggregate([
