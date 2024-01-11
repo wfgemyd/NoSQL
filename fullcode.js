@@ -1,4 +1,3 @@
-//it is not .js, it is for mongodb shell.
 db.department.insertMany([
   { "department_name": "Cardiology", "phone_num_extension": "1001" },
   { "department_name": "Neurology", "phone_num_extension": "1002" },
@@ -1035,6 +1034,7 @@ db.patient.aggregate([
 ]);
 
 //H1. Combine Names of All Staff (Doctors and Nurses)
+//must be ran by two separate queries and then combine.
 // Fetch all doctors
 let doctor = db.doctor.find({}, { first_name: 1, last_name: 1 }).toArray();
 
@@ -1234,12 +1234,13 @@ db.room.updateMany(
 );
 
 //P. Delete Patients Who Have Not Been Visited
-//first the patients who have not been visited and then delete them.
+//first find the patients who have not been visited and then delete them.
 let visitedPatientsIds = db.visitor.distinct("patient_id");
 db.patient.deleteMany({ _id: { $nin: visitedPatientsIds } });
 
 //B(ra). Insert Doctors and Select Those Not Assigned to Any Duty Shift
 //For inserting data based on condition, need to find the department ID first
+// Find department ID for 'General Medicine'
 let generalMedicineDepartmentId = db.department.findOne({ department_name: "General Medicine" })._id;
 
 // Insert doctor
@@ -1313,3 +1314,155 @@ db.doctor.aggregate([
     $sort: { totalPrescriptions: -1 }
   }
 ]);
+
+//summary: mongodb, is not directly supporting sql view style, updating based on subquery or insertion in subquery as well. everything is much less intuitive and long.
+
+
+//_________________________________________________
+//"stored functions"
+//returns all the numberof patients in standard rooms.
+var countPatientsInStandardRooms = function() {
+    return db.patient.aggregate([
+        { $lookup: {
+            from: "room",
+            localField: "room_id",
+            foreignField: "_id",
+            as: "roomDetails"
+        }},
+        { $match: { "roomDetails.is_vip": false }},
+        { $count: "patientCount" }
+    ]).toArray();
+};
+
+var result = countPatientsInStandardRooms();
+print(result);
+
+//get all patients
+var getAllPatients = function() {
+    return db.patient.find({}).toArray();
+};
+
+print(getAllPatients());
+
+//Get Treatment Detail for a Patient
+var getTreatment = function(patientId) {
+    return db.prescription.aggregate([
+        { $match: { patient_id: ObjectId(patientId) } }, // Match prescriptions for the patient
+        { $lookup: {
+            from: "treatment",
+            localField: "prescription_id", // Match by prescription_id instead of _id
+            foreignField: "prescription_id",
+            as: "treatmentDetails"
+        }},
+        { $unwind: "$treatmentDetails" }, // Unwind the treatment details
+        { $project: {
+            prescription_id: "$_id",
+            nurse_id: "$treatmentDetails.nurse_id",
+            treatment_description: "$treatmentDetails.treatment_description"
+        }}
+    ]).toArray();
+};
+
+print(getTreatment(ObjectId("659eefb84cd1657147b21c1f"))); //ObjectId of patient
+
+//sort patient by room
+var sortPatientsByRoom = function() {
+    return db.patient.find({}).sort({ room_id: 1 }).toArray();
+};
+
+print(sortPatientsByRoom());
+
+
+//get doctors with the requierd fields, id,first name, last name.
+var getDoctors = function() {
+    return db.doctor.find({}, { doctor_id: 1, first_name: 1, last_name: 1 }).toArray();
+};
+
+print(getDoctors());
+
+//________________________________
+//Check Patient In Standard Room - This function checks if the room already has 6 patients before inserting a new patient into a standard room.
+var checkPatientInStandardRoom = function(roomId, patientData) {
+    var room = db.room.findOne({ room_id: roomId });
+    if (!room.is_vip) {
+        var patientCount = db.patient.count({ room_id: roomId });
+        if (patientCount >= 6) {
+            print('Error in room: Max of 6 patients allowed in Standard Room.');
+            return;
+        }
+    }
+    db.patient.insertOne(patientData);
+};
+
+checkPatientInStandardRoom(4, {
+    patient_id: 88,
+    room_id: 4,
+    first_name: "Alice",
+    last_name: "Johnson",
+    dob: "1980-04-23",
+    gender: "Female",
+    address: "456 Maple Street"
+});
+
+//Prevent Change to VIP Room - This function prevents changing a room to VIP if it already has occupants.
+var preventChangeToVip = function(roomId, newVipStatus) {
+    var patientCount = db.patient.count({ room_id: roomId });
+    if (newVipStatus && patientCount > 0) {
+        print('Error in room: Cannot change room to VIP; it already has occupants.');
+        return;
+    }
+    db.room.updateOne({ room_id: roomId }, { $set: { is_vip: newVipStatus } });
+};
+
+preventChangeToVip(4, true);
+
+//Check Patient In VIP Room - This function ensures that only one patient is allowed in a VIP room.
+var checkPatientInVipRoom = function(roomId, patientData) {
+    var room = db.room.findOne({ room_id: roomId });
+    if (room.is_vip) {
+        var patientCount = db.patient.count({ room_id: roomId });
+        if (patientCount >= 1) {
+            print('Error in room: Only one patient allowed in VIP Room.');
+            return;
+        }
+    }
+    db.patient.insertOne(patientData);
+};
+
+checkPatientInVipRoom(3, {
+    patient_id: 91,
+    room_id: 3,
+    first_name: "Bob",
+    last_name: "Smith",
+    dob: "1992-11-15",
+    gender: "Male",
+    address: "789 Oak Lane"
+});
+
+
+//Ensure Doctor on Duty - This function checks for overlapping shifts before assigning a doctor to a duty shift.
+var ensureDoctorOnDuty = function(shiftData) {
+    var overlaps = db.dutyshift.findOne({
+        department_id: shiftData.department_id,
+        $or: [
+            { start_time: { $lt: shiftData.end_time }, end_time: { $gt: shiftData.start_time } },
+            { start_time: shiftData.start_time, end_time: shiftData.end_time }
+        ]
+    });
+
+    if (overlaps) {
+        print('Alert in dutyshift: Doctor assigned overlaps with another duty shift for the specified department.');
+        return;
+    }
+    db.dutyshift.insertOne(shiftData);
+};
+
+ensureDoctorOnDuty({
+    shift_id: 18,
+    doctor_id: 1,
+    department_id: 1,
+    start_time: "09:00",
+    end_time: "17:00"
+});
+
+
