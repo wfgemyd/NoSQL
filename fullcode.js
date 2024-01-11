@@ -1,3 +1,4 @@
+//it is not .js, it is for mongodb shell.
 db.department.insertMany([
   { "department_name": "Cardiology", "phone_num_extension": "1001" },
   { "department_name": "Neurology", "phone_num_extension": "1002" },
