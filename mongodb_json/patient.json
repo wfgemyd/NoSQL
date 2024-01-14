@@ -1,0 +1,185 @@
+[
+  {
+    "_id": {"$oid": "659eefb84cd1657147b21c1f"},
+    "address": "123 Birch Street",
+    "dob": "1985-07-12",
+    "first_name": "Gary",
+    "gender": "Male",
+    "last_name": "Wilson",
+    "patient_id": 1,
+    "room_id": {"$oid": "659eefb74cd1657147b21c19"}
+  },
+  {
+    "_id": {"$oid": "659eefb84cd1657147b21c20"},
+    "address": "234 Cedar Road",
+    "dob": "1990-05-16",
+    "first_name": "Hannah",
+    "gender": "Female",
+    "last_name": "Clark",
+    "patient_id": 2,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1a"}
+  },
+  {
+    "_id": {"$oid": "659eefb84cd1657147b21c21"},
+    "address": "345 Elm Avenue",
+    "dob": "1978-11-22",
+    "first_name": "Ian",
+    "gender": "Male",
+    "last_name": "Rodriguez",
+    "patient_id": 3,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1b"}
+  },
+  {
+    "_id": {"$oid": "659eefb84cd1657147b21c22"},
+    "address": "456 Pine Lane",
+    "dob": "2002-03-30",
+    "first_name": "Julia",
+    "gender": "Female",
+    "last_name": "Lopez",
+    "patient_id": 4,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1c"}
+  },
+  {
+    "_id": {"$oid": "659eefb84cd1657147b21c23"},
+    "address": "567 Maple Parkway",
+    "dob": "1966-01-19",
+    "first_name": "Kyle",
+    "gender": "Male",
+    "last_name": "Garcia",
+    "patient_id": 5,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1d"}
+  },
+  {
+    "_id": {"$oid": "659ff6aec3b1696c2a2a7a3c"},
+    "address": "123 Birch Street",
+    "dob": "1985-07-12",
+    "first_name": "Gary",
+    "gender": "Male",
+    "last_name": "Wilson",
+    "patient_id": 1,
+    "room_id": {"$oid": "659eefb74cd1657147b21c19"}
+  },
+  {
+    "_id": {"$oid": "659ff6aec3b1696c2a2a7a3d"},
+    "address": "234 Cedar Road",
+    "dob": "1990-05-16",
+    "first_name": "Hannah",
+    "gender": "Female",
+    "last_name": "Clark",
+    "patient_id": 2,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1a"}
+  },
+  {
+    "_id": {"$oid": "659ff6aec3b1696c2a2a7a3e"},
+    "address": "345 Elm Avenue",
+    "dob": "1978-11-22",
+    "first_name": "Ian",
+    "gender": "Male",
+    "last_name": "Rodriguez",
+    "patient_id": 3,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1b"}
+  },
+  {
+    "_id": {"$oid": "659ff6aec3b1696c2a2a7a3f"},
+    "address": "456 Pine Lane",
+    "dob": "2002-03-30",
+    "first_name": "Julia",
+    "gender": "Female",
+    "last_name": "Lopez",
+    "patient_id": 4,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1c"}
+  },
+  {
+    "_id": {"$oid": "659ff6aec3b1696c2a2a7a40"},
+    "address": "567 Maple Parkway",
+    "dob": "1966-01-19",
+    "first_name": "Kyle",
+    "gender": "Male",
+    "last_name": "Garcia",
+    "patient_id": 5,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1d"}
+  },
+  {
+    "_id": {"$oid": "659ff6aec3b1696c2a2a7a41"},
+    "address": "567 Maple Parkwdday",
+    "dob": "1964-01-23",
+    "first_name": "Kylrre",
+    "gender": "Male",
+    "last_name": "Garhhcia",
+    "patient_id": 6,
+    "room_id": {"$oid": "659eefb74cd1657147b21c1e"}
+  },
+  {
+    "_id": {"$oid": "659ffaacc3b1696c2a2a7a53"}
+  },
+  {
+    "_id": {"$oid": "659ffda1c3b1696c2a2a7a55"},
+    "address": "456 Maple Street",
+    "dob": "1980-04-23",
+    "first_name": "Alice",
+    "gender": "Female",
+    "last_name": "Johnson",
+    "patient_id": 100,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659ffda5c3b1696c2a2a7a56"},
+    "address": "456 Maple Street",
+    "dob": "1980-04-23",
+    "first_name": "Alice",
+    "gender": "Female",
+    "last_name": "Johnson",
+    "patient_id": 100,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659ffdecc3b1696c2a2a7a57"},
+    "address": "456 Maple Street",
+    "dob": "1980-04-23",
+    "first_name": "Alice",
+    "gender": "Female",
+    "last_name": "Johnson",
+    "patient_id": 12,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659ffdf1c3b1696c2a2a7a58"},
+    "address": "456 Maple Street",
+    "dob": "1980-04-23",
+    "first_name": "Alice",
+    "gender": "Female",
+    "last_name": "Johnson",
+    "patient_id": 17,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659ffdf5c3b1696c2a2a7a59"},
+    "address": "456 Maple Street",
+    "dob": "1980-04-23",
+    "first_name": "Alice",
+    "gender": "Female",
+    "last_name": "Johnson",
+    "patient_id": 19,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659ffdfac3b1696c2a2a7a5a"},
+    "address": "456 Maple Street",
+    "dob": "1980-04-23",
+    "first_name": "Alice",
+    "gender": "Female",
+    "last_name": "Johnson",
+    "patient_id": 188,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659ffe36c3b1696c2a2a7a5c"},
+    "address": "789 Oak Lane",
+    "dob": "1992-11-15",
+    "first_name": "Bob",
+    "gender": "Male",
+    "last_name": "Smith",
+    "patient_id": 101,
+    "room_id": 3
+  }
+]

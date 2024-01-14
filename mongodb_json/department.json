@@ -1,0 +1,92 @@
+[
+  {
+    "_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "department_name": "Cardiology",
+    "phone_num_extension": "1001"
+  },
+  {
+    "_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "department_name": "Neurology",
+    "phone_num_extension": "1002"
+  },
+  {
+    "_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "department_name": "Oncology",
+    "phone_num_extension": "1003"
+  },
+  {
+    "_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "department_name": "Pediatrics",
+    "phone_num_extension": "1004"
+  },
+  {
+    "_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "department_name": "General Medicine",
+    "phone_num_extension": "1234"
+  },
+  {
+    "_id": {"$oid": "659eefb44cd1657147b21c08"},
+    "department_name": "Orthopedics",
+    "phone_num_extension": "1005"
+  },
+  {
+    "_id": {"$oid": "659fd27dc3b1696c2a2a79ea"},
+    "department_name": "Cardiology",
+    "phone_num_extension": "1001"
+  },
+  {
+    "_id": {"$oid": "659fd27dc3b1696c2a2a79eb"},
+    "department_name": "Neurology",
+    "phone_num_extension": "1002"
+  },
+  {
+    "_id": {"$oid": "659fd27dc3b1696c2a2a79ec"},
+    "department_name": "Oncology",
+    "phone_num_extension": "1003"
+  },
+  {
+    "_id": {"$oid": "659fd27dc3b1696c2a2a79ed"},
+    "department_name": "Pediatrics",
+    "phone_num_extension": "1004"
+  },
+  {
+    "_id": {"$oid": "659fd27dc3b1696c2a2a79ee"},
+    "department_name": "General Medicine",
+    "phone_num_extension": "1234"
+  },
+  {
+    "_id": {"$oid": "659fd27dc3b1696c2a2a79ef"},
+    "department_name": "Orthopedics",
+    "phone_num_extension": "1005"
+  },
+  {
+    "_id": {"$oid": "659ff6aac3b1696c2a2a7a20"},
+    "department_name": "Cardiology",
+    "phone_num_extension": "1001"
+  },
+  {
+    "_id": {"$oid": "659ff6aac3b1696c2a2a7a21"},
+    "department_name": "Neurology",
+    "phone_num_extension": "1002"
+  },
+  {
+    "_id": {"$oid": "659ff6aac3b1696c2a2a7a22"},
+    "department_name": "Oncology",
+    "phone_num_extension": "1003"
+  },
+  {
+    "_id": {"$oid": "659ff6aac3b1696c2a2a7a23"},
+    "department_name": "Pediatrics",
+    "phone_num_extension": "1004"
+  },
+  {
+    "_id": {"$oid": "659ff6aac3b1696c2a2a7a24"},
+    "department_name": "General Medicine",
+    "phone_num_extension": "1234"
+  },
+  {
+    "_id": {"$oid": "659ff6aac3b1696c2a2a7a25"},
+    "department_name": "Orthopedics",
+    "phone_num_extension": "1005"
+  }
+]

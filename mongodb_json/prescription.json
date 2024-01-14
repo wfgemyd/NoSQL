@@ -1,0 +1,92 @@
+[
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c25"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c09"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c1f"},
+    "prescription_id": 1
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c26"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0a"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c20"},
+    "prescription_id": 2
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c27"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0b"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c21"},
+    "prescription_id": 3
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c28"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0c"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c22"},
+    "prescription_id": 4
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c29"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0d"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c23"},
+    "prescription_id": 5
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a0c"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c09"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c1f"},
+    "prescription_id": 1
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a0d"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0a"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c20"},
+    "prescription_id": 2
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a0e"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0b"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c21"},
+    "prescription_id": 3
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a0f"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0c"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c22"},
+    "prescription_id": 4
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a10"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0d"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c23"},
+    "prescription_id": 5
+  },
+  {
+    "_id": {"$oid": "659ff6b0c3b1696c2a2a7a42"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c09"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c1f"},
+    "prescription_id": 1
+  },
+  {
+    "_id": {"$oid": "659ff6b0c3b1696c2a2a7a43"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0a"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c20"},
+    "prescription_id": 2
+  },
+  {
+    "_id": {"$oid": "659ff6b0c3b1696c2a2a7a44"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0b"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c21"},
+    "prescription_id": 3
+  },
+  {
+    "_id": {"$oid": "659ff6b0c3b1696c2a2a7a45"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0c"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c22"},
+    "prescription_id": 4
+  },
+  {
+    "_id": {"$oid": "659ff6b0c3b1696c2a2a7a46"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0d"},
+    "patient_id": {"$oid": "659eefb84cd1657147b21c23"},
+    "prescription_id": 5
+  }
+]

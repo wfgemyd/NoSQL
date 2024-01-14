@@ -1,0 +1,137 @@
+[
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c2f"},
+    "first_name": "Laura",
+    "last_name": "Moore",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c1f"},
+    "relation": "Sister",
+    "visit_date_and_time": "2023-07-01 10:00",
+    "visitor_id": 1
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c30"},
+    "first_name": "Mark",
+    "last_name": "White",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c20"},
+    "relation": "Brother",
+    "visit_date_and_time": "2023-07-02 11:00",
+    "visitor_id": 2
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c31"},
+    "first_name": "Nancy",
+    "last_name": "Hall",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c21"},
+    "relation": "Mother",
+    "visit_date_and_time": "2023-07-03 12:00",
+    "visitor_id": 3
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c32"},
+    "first_name": "Oscar",
+    "last_name": "Young",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c22"},
+    "relation": "Father",
+    "visit_date_and_time": "2023-07-04 13:00",
+    "visitor_id": 4
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c33"},
+    "first_name": "Patricia",
+    "last_name": "King",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c23"},
+    "relation": "Daughter",
+    "visit_date_and_time": "2023-07-05 14:00",
+    "visitor_id": 5
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a16"},
+    "first_name": "Laura",
+    "last_name": "Moore",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c1f"},
+    "relation": "Sister",
+    "visit_date_and_time": "2023-07-01 10:00",
+    "visitor_id": 1
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a17"},
+    "first_name": "Mark",
+    "last_name": "White",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c20"},
+    "relation": "Brother",
+    "visit_date_and_time": "2023-07-02 11:00",
+    "visitor_id": 2
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a18"},
+    "first_name": "Nancy",
+    "last_name": "Hall",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c21"},
+    "relation": "Mother",
+    "visit_date_and_time": "2023-07-03 12:00",
+    "visitor_id": 3
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a19"},
+    "first_name": "Oscar",
+    "last_name": "Young",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c22"},
+    "relation": "Father",
+    "visit_date_and_time": "2023-07-04 13:00",
+    "visitor_id": 4
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a1a"},
+    "first_name": "Patricia",
+    "last_name": "King",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c23"},
+    "relation": "Daughter",
+    "visit_date_and_time": "2023-07-05 14:00",
+    "visitor_id": 5
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a4c"},
+    "first_name": "Laura",
+    "last_name": "Moore",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c1f"},
+    "relation": "Sister",
+    "visit_date_and_time": "2023-07-01 10:00",
+    "visitor_id": 1
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a4d"},
+    "first_name": "Mark",
+    "last_name": "White",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c20"},
+    "relation": "Brother",
+    "visit_date_and_time": "2023-07-02 11:00",
+    "visitor_id": 2
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a4e"},
+    "first_name": "Nancy",
+    "last_name": "Hall",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c21"},
+    "relation": "Mother",
+    "visit_date_and_time": "2023-07-03 12:00",
+    "visitor_id": 3
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a4f"},
+    "first_name": "Oscar",
+    "last_name": "Young",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c22"},
+    "relation": "Father",
+    "visit_date_and_time": "2023-07-04 13:00",
+    "visitor_id": 4
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a50"},
+    "first_name": "Patricia",
+    "last_name": "King",
+    "patient_id": {"$oid": "659eefb84cd1657147b21c23"},
+    "relation": "Daughter",
+    "visit_date_and_time": "2023-07-05 14:00",
+    "visitor_id": 5
+  }
+]

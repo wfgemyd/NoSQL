@@ -1,0 +1,199 @@
+[
+  {
+    "_id": {"$oid": "659eefb54cd1657147b21c09"},
+    "address": "123 Elm Street",
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_num": "555-0101",
+    "specialization": "Cardiologist"
+  },
+  {
+    "_id": {"$oid": "659eefb54cd1657147b21c0a"},
+    "address": "456 Oak Avenue",
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "doctor_id": 2,
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "phone_num": "555-0102",
+    "specialization": "Neurologist"
+  },
+  {
+    "_id": {"$oid": "659eefb54cd1657147b21c0b"},
+    "address": "789 Pine Boulevard",
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "doctor_id": 3,
+    "first_name": "Emily",
+    "last_name": "Jones",
+    "phone_num": "555-0103",
+    "specialization": "Oncologist"
+  },
+  {
+    "_id": {"$oid": "659eefb54cd1657147b21c0c"},
+    "address": "321 Maple Drive",
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "doctor_id": 4,
+    "first_name": "William",
+    "last_name": "Brown",
+    "phone_num": "555-0104",
+    "specialization": "Pediatrician"
+  },
+  {
+    "_id": {"$oid": "659eefb54cd1657147b21c0d"},
+    "address": "654 Cedar Lane",
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "doctor_id": 5,
+    "first_name": "Sarah",
+    "last_name": "Davis",
+    "phone_num": "555-0105",
+    "specialization": "Orthopedist"
+  },
+  {
+    "_id": {"$oid": "659fc8c8c3b1696c2a2a79e8"},
+    "address": "123 Heart St",
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": 6,
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_num": "555-0101",
+    "specialization": "Cardiologist"
+  },
+  {
+    "_id": {"$oid": "659fd27ec3b1696c2a2a79f0"},
+    "address": "123 Elm Street",
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_num": "555-0101",
+    "specialization": "Cardiologist"
+  },
+  {
+    "_id": {"$oid": "659fd27ec3b1696c2a2a79f1"},
+    "address": "456 Oak Avenue",
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "doctor_id": 2,
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "phone_num": "555-0102",
+    "specialization": "Neurologist"
+  },
+  {
+    "_id": {"$oid": "659fd27ec3b1696c2a2a79f2"},
+    "address": "789 Pine Boulevard",
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "doctor_id": 3,
+    "first_name": "Emily",
+    "last_name": "Jones",
+    "phone_num": "555-0103",
+    "specialization": "Oncologist"
+  },
+  {
+    "_id": {"$oid": "659fd27ec3b1696c2a2a79f3"},
+    "address": "321 Maple Drive",
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "doctor_id": 4,
+    "first_name": "William",
+    "last_name": "Brown",
+    "phone_num": "555-0104",
+    "specialization": "Pediatrician"
+  },
+  {
+    "_id": {"$oid": "659fd27ec3b1696c2a2a79f4"},
+    "address": "654 Cedar Lane",
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "doctor_id": 5,
+    "first_name": "Sarah",
+    "last_name": "Davis",
+    "phone_num": "555-0105",
+    "specialization": "Orthopedist"
+  },
+  {
+    "_id": {"$oid": "659fd28bc3b1696c2a2a7a1b"},
+    "address": "123 Heart St",
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": 6,
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_num": "555-0101",
+    "specialization": "Cardiologist"
+  },
+  {
+    "_id": {"$oid": "659fd291c3b1696c2a2a7a1c"},
+    "address": "456 Elm Street",
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "phone_num": "555-0202",
+    "specialization": "General"
+  },
+  {
+    "_id": {"$oid": "659fd4dac3b1696c2a2a7a1e"},
+    "address": "456 Elm Street",
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "phone_num": "555-0202",
+    "specialization": "General"
+  },
+  {
+    "_id": {"$oid": "659ff6abc3b1696c2a2a7a26"},
+    "address": "123 Elm Street",
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_num": "555-0101",
+    "specialization": "Cardiologist"
+  },
+  {
+    "_id": {"$oid": "659ff6abc3b1696c2a2a7a27"},
+    "address": "456 Oak Avenue",
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "doctor_id": 2,
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "phone_num": "555-0102",
+    "specialization": "Neurologist"
+  },
+  {
+    "_id": {"$oid": "659ff6abc3b1696c2a2a7a28"},
+    "address": "789 Pine Boulevard",
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "doctor_id": 3,
+    "first_name": "Emily",
+    "last_name": "Jones",
+    "phone_num": "555-0103",
+    "specialization": "Oncologist"
+  },
+  {
+    "_id": {"$oid": "659ff6abc3b1696c2a2a7a29"},
+    "address": "321 Maple Drive",
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "doctor_id": 4,
+    "first_name": "William",
+    "last_name": "Brown",
+    "phone_num": "555-0104",
+    "specialization": "Pediatrician"
+  },
+  {
+    "_id": {"$oid": "659ff6abc3b1696c2a2a7a2a"},
+    "address": "654 Cedar Lane",
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "doctor_id": 5,
+    "first_name": "Sarah",
+    "last_name": "Davis",
+    "phone_num": "555-0105",
+    "specialization": "Orthopedist"
+  },
+  {
+    "_id": {"$oid": "659ff6b7c3b1696c2a2a7a51"},
+    "address": "123 Heart St",
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "first_name": "John",
+    "last_name": "Doe",
+    "phone_num": "555-0101",
+    "specialization": "Cardiologist"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c19"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "is_vip": false,
+    "occupancy": 6,
+    "room_id": 1
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c1a"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "is_vip": true,
+    "occupancy": 6,
+    "room_id": 2
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c1b"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 3
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c1c"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "is_vip": false,
+    "occupancy": 6,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c1d"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 5
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c1e"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 6
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a7a00"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "is_vip": false,
+    "occupancy": 6,
+    "room_id": 1
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a7a01"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "is_vip": false,
+    "occupancy": 6,
+    "room_id": 2
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a7a02"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 3
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a7a03"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "is_vip": false,
+    "occupancy": 6,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a7a04"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 5
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a7a05"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 6
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a36"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "is_vip": false,
+    "occupancy": 1,
+    "room_id": 1
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a37"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "is_vip": false,
+    "occupancy": 2,
+    "room_id": 2
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a38"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 3
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a39"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "is_vip": false,
+    "occupancy": 2,
+    "room_id": 4
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a3a"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 5
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a3b"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "is_vip": true,
+    "occupancy": 1,
+    "room_id": 6
+  }
+]

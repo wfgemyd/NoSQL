@@ -1,0 +1,130 @@
+[
+  {
+    "_id": {"$oid": "659eefb64cd1657147b21c0e"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c09"},
+    "end_time": "16:00",
+    "shift_id": 1,
+    "start_time": "08:00"
+  },
+  {
+    "_id": {"$oid": "659eefb64cd1657147b21c0f"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0a"},
+    "end_time": "17:00",
+    "shift_id": 2,
+    "start_time": "09:00"
+  },
+  {
+    "_id": {"$oid": "659eefb64cd1657147b21c10"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0b"},
+    "end_time": "18:00",
+    "shift_id": 3,
+    "start_time": "10:00"
+  },
+  {
+    "_id": {"$oid": "659eefb64cd1657147b21c11"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0c"},
+    "end_time": "19:00",
+    "shift_id": 4,
+    "start_time": "11:00"
+  },
+  {
+    "_id": {"$oid": "659eefb64cd1657147b21c12"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0d"},
+    "end_time": "20:00",
+    "shift_id": 5,
+    "start_time": "12:00"
+  },
+  {
+    "_id": {"$oid": "659fd27fc3b1696c2a2a79f5"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c09"},
+    "end_time": "16:00",
+    "shift_id": 1,
+    "start_time": "08:00"
+  },
+  {
+    "_id": {"$oid": "659fd27fc3b1696c2a2a79f6"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0a"},
+    "end_time": "17:00",
+    "shift_id": 2,
+    "start_time": "09:00"
+  },
+  {
+    "_id": {"$oid": "659fd27fc3b1696c2a2a79f7"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0b"},
+    "end_time": "18:00",
+    "shift_id": 3,
+    "start_time": "10:00"
+  },
+  {
+    "_id": {"$oid": "659fd27fc3b1696c2a2a79f8"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0c"},
+    "end_time": "19:00",
+    "shift_id": 4,
+    "start_time": "11:00"
+  },
+  {
+    "_id": {"$oid": "659fd27fc3b1696c2a2a79f9"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0d"},
+    "end_time": "20:00",
+    "shift_id": 5,
+    "start_time": "12:00"
+  },
+  {
+    "_id": {"$oid": "659ff6acc3b1696c2a2a7a2b"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c03"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c09"},
+    "end_time": "16:00",
+    "shift_id": 1,
+    "start_time": "08:00"
+  },
+  {
+    "_id": {"$oid": "659ff6acc3b1696c2a2a7a2c"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c04"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0a"},
+    "end_time": "17:00",
+    "shift_id": 2,
+    "start_time": "09:00"
+  },
+  {
+    "_id": {"$oid": "659ff6acc3b1696c2a2a7a2d"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c05"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0b"},
+    "end_time": "18:00",
+    "shift_id": 3,
+    "start_time": "10:00"
+  },
+  {
+    "_id": {"$oid": "659ff6acc3b1696c2a2a7a2e"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c06"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0c"},
+    "end_time": "19:00",
+    "shift_id": 4,
+    "start_time": "11:00"
+  },
+  {
+    "_id": {"$oid": "659ff6acc3b1696c2a2a7a2f"},
+    "department_id": {"$oid": "659eefb44cd1657147b21c07"},
+    "doctor_id": {"$oid": "659eefb54cd1657147b21c0d"},
+    "end_time": "20:00",
+    "shift_id": 5,
+    "start_time": "12:00"
+  },
+  {
+    "_id": {"$oid": "659ffe63c3b1696c2a2a7a5e"},
+    "department_id": 1,
+    "doctor_id": 1,
+    "end_time": "17:00",
+    "shift_id": 10,
+    "start_time": "09:00"
+  }
+]

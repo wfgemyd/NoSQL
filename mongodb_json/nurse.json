@@ -1,0 +1,146 @@
+[
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c13"},
+    "first_name": "Alice",
+    "is_chef": "Yes",
+    "last_name": "Headnurse",
+    "nurse_id": 1,
+    "nurse_nurse_id": null
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c14"},
+    "first_name": "Craig",
+    "is_chef": "Yes",
+    "last_name": "Chiefnurse",
+    "nurse_id": 2,
+    "nurse_nurse_id": null
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c15"},
+    "first_name": "Bob",
+    "is_chef": "No",
+    "last_name": "Undernurse",
+    "nurse_id": 3,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c13"}
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c16"},
+    "first_name": "Charlie",
+    "is_chef": "No",
+    "last_name": "Assistnurse",
+    "nurse_id": 4,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c13"}
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c17"},
+    "first_name": "Diana",
+    "is_chef": "No",
+    "last_name": "Helpnurse",
+    "nurse_id": 5,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c14"}
+  },
+  {
+    "_id": {"$oid": "659eefb74cd1657147b21c18"},
+    "first_name": "Eva",
+    "is_chef": "No",
+    "last_name": "Aidnurse",
+    "nurse_id": 6,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c14"}
+  },
+  {
+    "_id": {"$oid": "659fd27fc3b1696c2a2a79fa"},
+    "first_name": "Alice",
+    "is_chef": "Yes",
+    "last_name": "Headnurse",
+    "nurse_id": 1,
+    "nurse_nurse_id": null
+  },
+  {
+    "_id": {"$oid": "659fd27fc3b1696c2a2a79fb"},
+    "first_name": "Craig",
+    "is_chef": "Yes",
+    "last_name": "Chiefnurse",
+    "nurse_id": 2,
+    "nurse_nurse_id": null
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a79fc"},
+    "first_name": "Bob",
+    "is_chef": "No",
+    "last_name": "Undernurse",
+    "nurse_id": 3,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c13"}
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a79fd"},
+    "first_name": "Charlie",
+    "is_chef": "No",
+    "last_name": "Assistnurse",
+    "nurse_id": 4,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c13"}
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a79fe"},
+    "first_name": "Diana",
+    "is_chef": "No",
+    "last_name": "Helpnurse",
+    "nurse_id": 5,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c14"}
+  },
+  {
+    "_id": {"$oid": "659fd280c3b1696c2a2a79ff"},
+    "first_name": "Eva",
+    "is_chef": "No",
+    "last_name": "Aidnurse",
+    "nurse_id": 6,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c14"}
+  },
+  {
+    "_id": {"$oid": "659ff6acc3b1696c2a2a7a30"},
+    "first_name": "Alice",
+    "is_chef": "Yes",
+    "last_name": "Headnurse",
+    "nurse_id": 1,
+    "nurse_nurse_id": null
+  },
+  {
+    "_id": {"$oid": "659ff6acc3b1696c2a2a7a31"},
+    "first_name": "Craig",
+    "is_chef": "Yes",
+    "last_name": "Chiefnurse",
+    "nurse_id": 2,
+    "nurse_nurse_id": null
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a32"},
+    "first_name": "Bob",
+    "is_chef": "No",
+    "last_name": "Undernurse",
+    "nurse_id": 3,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c13"}
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a33"},
+    "first_name": "Charlie",
+    "is_chef": "No",
+    "last_name": "Assistnurse",
+    "nurse_id": 4,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c13"}
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a34"},
+    "first_name": "Diana",
+    "is_chef": "No",
+    "last_name": "Helpnurse",
+    "nurse_id": 5,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c14"}
+  },
+  {
+    "_id": {"$oid": "659ff6adc3b1696c2a2a7a35"},
+    "first_name": "Eva",
+    "is_chef": "No",
+    "last_name": "Aidnurse",
+    "nurse_id": 6,
+    "nurse_nurse_id": {"$oid": "659eefb74cd1657147b21c14"}
+  }
+]

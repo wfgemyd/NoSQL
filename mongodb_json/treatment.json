@@ -1,0 +1,92 @@
+[
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c2a"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c13"},
+    "prescription_id": 1,
+    "treatment_description": "Blood Pressure Monitoring"
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c2b"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c14"},
+    "prescription_id": 2,
+    "treatment_description": "Medication Administration"
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c2c"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c15"},
+    "prescription_id": 3,
+    "treatment_description": "Chemotherapy"
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c2d"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c16"},
+    "prescription_id": 4,
+    "treatment_description": "Routine Checkup"
+  },
+  {
+    "_id": {"$oid": "659eefbb4cd1657147b21c2e"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c17"},
+    "prescription_id": 5,
+    "treatment_description": "Orthopedic Surgery"
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a11"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c13"},
+    "prescription_id": 1,
+    "treatment_description": "Blood Pressure Monitoring"
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a12"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c14"},
+    "prescription_id": 2,
+    "treatment_description": "Medication Administration"
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a13"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c15"},
+    "prescription_id": 3,
+    "treatment_description": "Chemotherapy"
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a14"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c16"},
+    "prescription_id": 4,
+    "treatment_description": "Routine Checkup"
+  },
+  {
+    "_id": {"$oid": "659fd284c3b1696c2a2a7a15"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c17"},
+    "prescription_id": 5,
+    "treatment_description": "Orthopedic Surgery"
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a47"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c13"},
+    "prescription_id": 1,
+    "treatment_description": "Blood Pressure Monitoring"
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a48"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c14"},
+    "prescription_id": 2,
+    "treatment_description": "Medication Administration"
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a49"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c15"},
+    "prescription_id": 3,
+    "treatment_description": "Chemotherapy"
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a4a"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c16"},
+    "prescription_id": 4,
+    "treatment_description": "Routine Checkup"
+  },
+  {
+    "_id": {"$oid": "659ff6b1c3b1696c2a2a7a4b"},
+    "nurse_id": {"$oid": "659eefb74cd1657147b21c17"},
+    "prescription_id": 5,
+    "treatment_description": "Orthopedic Surgery"
+  }
+]
