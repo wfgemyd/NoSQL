@@ -1,0 +1,52 @@
+Multi-stage lookups to reflect indirect relationships are complex and may require multiple aggregation pipeline stages with `$lookup` and `$unwind`. 
+
+
+D1ra. Insert a Cardiologist in the Cardiology Department
+MongoDB does not support subqueries in the same way as SQL. One would need to find the department ID first, then insert the doctor.
+
+D1rb. Select Departments Where All Doctors Specialize in 'Cardiology'
+MongoDB does not support this type of query directly. One would need to retrieve all departments and their doctors, then filter them in the application code.
+
+F3. Cross Join Between Nurses and Doctors
+MongoDB does not support cross joins natively. Need to retrieve both collections separately and then combine them in the application logic. Alternatively, one could use a scripting language to iterate over one collection and for each document, iterate over the second collection.
+
+F5. Full Outer Join Between Nurses and Treatments
+MongoDB does not support full outer joins. Need to perform two separate queries (one for nurses and one for treatments) and then combine the results in the application.
+
+Note: For the insertion operations, MongoDB does not have the concept of subqueries used in SQL INSERT statements. One will need to perform these insertions as separate operations, possibly retrieving the necessary IDs first and then using them in the insertOne or insertMany operations. Plus, some SQL constructs like full outer joins and cross joins do not have direct equivalents in MongoDB and need to be handled at the application level.
+
+H1. Combine Names of All Staff (Doctors and Nurses)
+must be ran by two separate queries and then combine.
+
+H3. Select Patients Who Are Both in a VIP Room and Have a Prescription
+requires two separate queries
+
+M. Assuming a View 'view_doctor_department' That Combines Doctor and Department Information
+MongoDB does not support SQL-style views.
+
+N. Insert into Prescription from a Subquery
+MongoDB does not support insertion from a subquery. First and then perform the insertion in a separate step.
+
+O. Update Nurse's Chef Status Based on a Subquery
+Updates based on a subquery are not directly supported in MongoDB. Must perform the query first, then update the documents based on the query results.
+
+Note: These translations are conceptual and depend on the exact structure of ones data in MongoDB. Some queries might require additional steps or different approaches - schema depended.
+
+P. Delete Patients Who Have Not Been Visited
+first find the patients who have not been visited and then delete them.
+
+In PostgreSQL, you can set up a trigger to automatically call a function when data in a table is modified, without needing to call the function explicitly in your application logic. MongoDB, on the other hand, is a NoSQL database that primarily focuses on document-based storage. It does not support triggers in the traditional SQL sense.
+Functions: They are typically used in the context of aggregation operations, map-reduce jobs, or simple JavaScript functions executed in the MongoDB shell. These functions are not stored in the database in the same way as PostgreSQL functions.
+
+Triggers: MongoDB does not have built-in support for triggers as found in SQL databases. However, MongoDB Atlas, the cloud version of MongoDB, offers trigger functionality that can react to database changes or scheduled events. But these triggers are managed outside of the core MongoDB engine, unlike PostgreSQL where triggers are an integral part of the database system.
+
+In MongoDB, if one would want functionality similar to a PostgreSQL trigger:
+
+Use external tools or services like MongoDB Atlas Triggers.
+Implement the logic in the application layer, where the application explicitly calls certain functions when data is inserted, updated, or deleted.
+
+Sumarry:
+The key difference lies in how both databases handle automation and reaction to data changes:
+PostgreSQL has built-in support for stored procedures and triggers, allowing for automated and complex data manipulation directly within the database.
+MongoDB focuses on flexibility and scalability with its document model and does not natively support triggers. Automation in MongoDB often requires external tools or application-level implementation.
+
